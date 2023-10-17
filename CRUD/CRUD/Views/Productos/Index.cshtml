@@ -1,0 +1,102 @@
+﻿@model IEnumerable<CRUD.Models.Producto>
+
+@{
+    ViewData["Title"] = "Pruducto";
+}
+
+<h1>Productos</h1>
+
+<p>
+    <a asp-action="Create">Crear</a>
+</p>
+@using (Html.BeginForm("Listado", "Productoes", FormMethod.Get))
+{
+    <div class="form-group">
+        <label for="codigoProducto">Código Producto:</label>
+        <input type="text" name="codigoProducto" class="form-control" placeholder="Código Producto" value="@ViewBag.CodigoProducto">
+    </div>
+
+    <div class="form-group">
+        <label for="idMarca">ID Marca:</label>
+        <input type="number" name="idMarca" class="form-control" placeholder="ID Marca" value="@ViewBag.IdMarca">
+    </div>
+
+    <div class="form-group">
+        <label for="idFamilia">ID Familia:</label>
+        <input type="number" name="idFamilia" class="form-control" placeholder="ID Familia" value="@ViewBag.IdFamilia">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Listado</button>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CodigoProducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioCosto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PrecioVenta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaModificacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Baja)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaBaja)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdFamiliaNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdMarcaNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodigoProducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioCosto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PrecioVenta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaModificacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Baja)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaBaja)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdFamiliaNavigation.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdMarcaNavigation.Id)
+            </td>
+            <td>
+                    <a class="btn btn-warning" asp-action="Edit" class="btn btn-outline-warning" asp-route-id="@item.Id">Editar</a> |
+                    <a class="btn btn-info" asp-action="Details" class="btn btn-primary" asp-route-id="@item.Id">Detalles</a> |
+                    <a class="btn btn-danger" asp-action="Delete" class="btn btn-danger" asp-route-id="@item.Id">Eliminar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
