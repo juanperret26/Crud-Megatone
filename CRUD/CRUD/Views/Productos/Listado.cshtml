@@ -1,0 +1,45 @@
+﻿@model IEnumerable<CRUD.Models.Producto>
+<h1>Listado de Productos</h1>
+
+@using (Html.BeginForm("Listado", "Productos", FormMethod.Get))
+{
+    <div class="form-group">
+        <label for="codigoProducto">Código de Producto:</label>
+        <input type="text" id="codigoProducto" name="codigoProducto" value="@ViewBag.CodigoProducto" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="idMarca">ID de Marca:</label>
+        <input type="number" id="idMarca" name="idMarca" value="@ViewBag.IdMarca" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="idFamilia">ID de Familia:</label>
+        <input type="number" id="idFamilia" name="idFamilia" value="@ViewBag.IdFamilia" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Buscar</button>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Código de Producto</th>
+            <th>Descripción</th>
+            <th>Precio de Costo</th>
+            <th>Precio de Venta</th>
+            
+            <!-- Otros campos que quieras mostrar -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var producto in Model)
+        {
+            <tr>
+                <td>@producto.CodigoProducto</td>
+                <td>@producto.Descripcion</td>
+                <td>@producto.PrecioCosto</td>
+                <td>@producto.PrecioVenta</td>
+                
+                <!-- Otros campos que quieras mostrar -->
+            </tr>
+        }
+    </tbody>
+</table>

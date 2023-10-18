@@ -26,7 +26,7 @@ namespace CRUD.Controllers
         }
 
         // GET: Productos/Details/5
-        public async Task<IActionResult> Details(string id)
+        public async Task<IActionResult> Details(int? id)
         {
             if (id == null || _context.Productos == null)
             {
@@ -36,7 +36,7 @@ namespace CRUD.Controllers
             var producto = await _context.Productos
                 .Include(p => p.IdFamiliaNavigation)
                 .Include(p => p.IdMarcaNavigation)
-                .FirstOrDefaultAsync(m => m.CodigoProducto == id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (producto == null)
             {
                 return NotFound();
@@ -71,9 +71,9 @@ namespace CRUD.Controllers
         }
 
         // GET: Productos/Edit/5
-        public async Task<IActionResult> Edit(int id)
+        public async Task<IActionResult> Edit(int? id)
         {
-            if (_context.Productos == null)
+            if (id == null || _context.Productos == null)
             {
                 return NotFound();
             }
@@ -83,8 +83,6 @@ namespace CRUD.Controllers
             {
                 return NotFound();
             }
-            ViewData["IdFamilia"] = new SelectList(_context.Familia, "Id", "Id", producto.IdFamilia);
-            ViewData["IdMarca"] = new SelectList(_context.Marcas, "Id", "Id", producto.IdMarca);
             return View(producto);
         }
 
@@ -93,40 +91,39 @@ namespace CRUD.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,CodigoProducto,Descripcion,PrecioCosto,PrecioVenta,IdMarca,IdFamilia,FechaModificacion,Baja,FechaBaja")] Producto producto)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Descripcion,PrecioCosto,PrecioVenta,IdMarca,IdFamilia")] Producto producto)
         {
             if (id != producto.Id)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                var productoExistente = await _context.Productos.FindAsync(id);
-                if (productoExistente != null)
-                {
-                    // Solo permitir editar ciertos campos y actualizar la fecha de modificación
-                    productoExistente.Descripcion = producto.Descripcion;
-                    productoExistente.IdMarca = producto.IdMarca;
-                    productoExistente.IdFamilia = producto.IdFamilia;
-                    productoExistente.FechaModificacion = DateTime.Now;
-
-                    _context.Update(productoExistente);
-                    await _context.SaveChangesAsync();
-                    return RedirectToAction(nameof(Index));
-                }
-                else
-                {
-                    return NotFound();
-                }
+                return View(producto);
             }
-            ViewData["IdFamilia"] = new SelectList(_context.Familia, "Id", "Id", producto.IdFamilia);
-            ViewData["IdMarca"] = new SelectList(_context.Marcas, "Id", "Id", producto.IdMarca);
-            return View(producto);
+
+            var productoExistente = await _context.Productos.FindAsync(id);
+
+            if (productoExistente != null)
+            {
+                productoExistente.Descripcion = producto.Descripcion;
+                productoExistente.PrecioCosto = producto.PrecioCosto;
+                productoExistente.PrecioVenta = producto.PrecioVenta;
+                productoExistente.IdMarca = producto.IdMarca;
+                productoExistente.IdFamilia = producto.IdFamilia;
+                productoExistente.FechaModificacion = DateTime.Now;
+
+                _context.Update(productoExistente);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+
+            return NotFound();
         }
 
         // GET: Productos/Delete/5
-        public async Task<IActionResult> Delete(string id)
+        public async Task<IActionResult> Delete(int? id)
         {
             if (id == null || _context.Productos == null)
             {
@@ -136,7 +133,7 @@ namespace CRUD.Controllers
             var producto = await _context.Productos
                 .Include(p => p.IdFamiliaNavigation)
                 .Include(p => p.IdMarcaNavigation)
-                .FirstOrDefaultAsync(m => m.CodigoProducto==id);
+                .FirstOrDefaultAsync(m => m.Id == id);
             if (producto == null)
             {
                 return NotFound();
@@ -164,14 +161,15 @@ namespace CRUD.Controllers
 
                 _context.Update(producto);
                 await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
             }
 
-            return RedirectToAction(nameof(Index));
+            return NotFound();
         }
 
-        private bool ProductoExists(string id)
+        private bool ProductoExists(int id)
         {
-            return (_context.Productos?.Any(e => e.CodigoProducto == id)).GetValueOrDefault();
+            return (_context.Productos?.Any(e => e.Id == id)).GetValueOrDefault();
         }
         public async Task<IActionResult> Listado(string codigoProducto, int? idMarca, int? idFamilia)
         {

@@ -9,97 +9,101 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CRUD
 build_property.RootNamespace = CRUD
-build_property.ProjectDir = C:\Users\juan_\source\repos\CRUD-BZA\CRUD\CRUD\
+build_property.ProjectDir = C:\Users\juan_\source\repos\Crud-Megatone\CRUD\CRUD\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\juan_\source\repos\CRUD-BZA\CRUD\CRUD
+build_property.MSBuildProjectDirectory = C:\Users\juan_\source\repos\Crud-Megatone\CRUD\CRUD
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Familia/Create.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Familia/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFtaWxpYVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Familia/Delete.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Familia/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFtaWxpYVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Familia/Details.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Familia/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFtaWxpYVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Familia/Edit.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Familia/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFtaWxpYVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Familia/Index.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Familia/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFtaWxpYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Home/Index.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Home/Privacy.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Marcas/Create.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Marcas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Marcas/Delete.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Marcas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Marcas/Details.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Marcas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Marcas/Edit.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Marcas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Marcas/Index.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Marcas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Productos/Create.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Productos/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Productos/Delete.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Productos/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Productos/Details.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Productos/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Productos/Edit.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Productos/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Productos/Index.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Productos/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Shared/Error.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Productos/Listado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdG9zXExpc3RhZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/_ViewImports.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/_ViewStart.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juan_/source/repos/CRUD-BZA/CRUD/CRUD/Views/Shared/_Layout.cshtml]
+[C:/Users/juan_/source/repos/Crud-Megatone/CRUD/CRUD/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-layzia8bah

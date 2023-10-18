@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Njs6AT42x4qdyk4uiycK48dkpM1aJfLHBM01S4QkjuJ/9gnunkyoLmd0a7jIRv4YXhfNEZvFB5kKqJ6+n+/VNg==",
+  "dgSpecHash": "cXxVAZsPkp5eVlCLDgFT3mmNBXyMf67hmYcd6s78BuStlkK74OH2js0BXFzX3FH8maEn+2ZnyrMWdFGCDaJzPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\juan_\\source\\repos\\CRUD-BZA\\CRUD\\CRUD\\CRUD.csproj",
+  "projectFilePath": "C:\\Users\\juan_\\source\\repos\\Crud-Megatone\\CRUD\\CRUD\\CRUD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\juan_\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\juan_\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
