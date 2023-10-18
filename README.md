@@ -1,15 +1,5 @@
 # Crud-Megatone
- La estructura de la API creada es la siguiente:
-CRUD
-├── Controllers
-│   ├── ProductosController.cs
-│   ├── FamiliaController.cs
-│   └── MarcasController.cs
-└── Models
-    ├── Familia.cs
-    ├── Marca.cs
-    └── Producto.cs
-    El controlador ProductosController será responsable de exponer los métodos Create, Delete, Edit y Listado. El controlador FamiliaController será responsable de exponer los métodos Create, Delete y Edit. El controlador MarcasController será responsable de exponer el método Create, Delete y Edit. Siguiendo el enunciado que posteriormente esta detallado:
+ El controlador ProductosController será responsable de exponer los métodos Create, Delete, Edit y Listado. El controlador FamiliaController será responsable de exponer los métodos Create, Delete y Edit. El controlador MarcasController será responsable de exponer el método Create, Delete y Edit. Siguiendo el enunciado que posteriormente esta detallado:
 
 Alta Producto: Permita dar de alta un registro en la tabla producto, si se crea un producto ya eliminado, dar de alta un registro nuevo, no reactivar el borrado, tener en cuenta la fecha modificación. 
 Baja Producto: Marque baja lógica en la tabla productos, con la fecha de baja. 
